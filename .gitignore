@@ -2,3 +2,5 @@
 /books/.env
 /customers/node_modules
 /customers/.env
+/orders/node_modules
+/orders/.env
