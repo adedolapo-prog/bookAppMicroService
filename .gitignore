@@ -1,2 +1,4 @@
 /books/node_modules
 /books/.env
+/customers/node_modules
+/customers/.env

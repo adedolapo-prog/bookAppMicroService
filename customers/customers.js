@@ -3,9 +3,9 @@ const express = require("express")
 const mongoose = require("mongoose")
 const app = express()
 require("dotenv").config({ path: __dirname + "/.env" })
-const bookRoutes = require("./routes")
+const customerRoutes = require("./routes")
 
-const port = 3900
+const port = 4000
 
 //initializing parser
 app.use(express.json())
@@ -24,11 +24,11 @@ try {
 
 //routes
 app.get("/", async (req, res) => {
-  res.send("This is our own endpoint")
+  res.send("This is our customer endpoint")
 })
 
-app.use("/books", bookRoutes)
+app.use("/customers", customerRoutes)
 
 app.listen(port, () => {
-  console.log(`book server is running on port ${port}`)
+  console.log(`customer server is running on port ${port}`)
 })
